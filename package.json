@@ -1,0 +1,25 @@
+{
+  "name": "hot-restaurant",
+  "version": "1.0.0",
+  "description": "A Node / Express based web applications for handling reservation requests. Your application will be made up of two parts:  1) A front-end set of HTML/CSS/JS pages for entering and viewing data and  2) A back-end composed of Node/Express and basic JS for storing, updating, and relaying reservation data.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tcalhounjr/hot-restaurant.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tcalhounjr/hot-restaurant/issues"
+  },
+  "homepage": "https://github.com/tcalhounjr/hot-restaurant#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3",
+    "path": "^0.12.7"
+  }
+}
