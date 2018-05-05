@@ -1,7 +1,11 @@
+"use strict"
+
 // =============================================================
-var express = require("express");
-var bodyParser = require("body-parser");
-var path = require("path");
+const express = require("express");
+const bodyParser = require("body-parser");
+const path = require("path");
+const newRes = require('./Reservation.js');
+
 
 // Sets up the Express App
 // =============================================================
@@ -17,16 +21,17 @@ app.use(bodyParser.json());
 const reservation = new Reservation('thomas', '703-555-5555', 'junk@gmail.com');
 let reservations = [];
 reservations.push(reservation);
+console.log(reservations);
 
 // Routes
 // =============================================================
 
 // Basic route that sends the user first to the AJAX Page
 app.get("/", function(req, res) {
-  res.sendFile(path.join(__dirname, "view.html"));
+  res.sendFile(path.join(__dirname, "index.html"));
 });
 
-app.get("/add", function(req, res) {
+app.get("/reserve", function(req, res) {
   res.sendFile(path.join(__dirname, "add.html"));
 });
 
