@@ -4,7 +4,7 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const path = require("path");
-const newRes = require('./Reservation.js');
+const Reservation = require('./Reservation.js');
 
 
 // Sets up the Express App
